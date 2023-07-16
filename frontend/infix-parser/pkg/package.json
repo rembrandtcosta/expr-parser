@@ -1,0 +1,14 @@
+{
+  "name": "infix-parser",
+  "version": "0.1.0",
+  "files": [
+    "infix_parser_bg.wasm",
+    "infix_parser.js",
+    "infix_parser.d.ts"
+  ],
+  "module": "infix_parser.js",
+  "types": "infix_parser.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
