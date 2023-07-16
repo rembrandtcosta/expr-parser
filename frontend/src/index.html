@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Expr-parser</title>
+  </head>
+  <body>
+   <div class="container py-4 px-3 mx-auto">
+      <header class="d-flex justify-content-between align-items-md-center pb-3 mb-5 border-bottom">
+        <h1 class="h4">
+          <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+            <span>Expr-parser</span>
+          </a>
+        </h1>
+        <a href="https://github.com/twbs/examples/tree/main/webpack/" target="_blank" rel="noopener">View on GitHub</a>
+      </header>
+
+      <div class="container">
+        <form class="main-section">
+          <label for="Expression">Expression:</label>
+          <input type="text" id="expression" name="name"><br><br>
+
+          <input type="submit" value="Submit" class="btn btn-primary" />
+        </form>
+
+        <table class="table table-sm table-bordered table-striped main-section">
+          <thead>
+            <tr>
+              <th scope="col">Operator</th>
+              <th scope="col">Precedence</th>
+              <th scope="col">Associativity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>+</td>
+              <td>2</td>
+              <td>Left</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>2</td>
+              <td>Left</td>
+            </tr>
+            <tr>
+              <td>/</td>
+              <td>3</td>
+              <td>Left</td>
+            </tr>
+            <tr>
+              <td>*</td>
+              <td>3</td>
+              <td>Left</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>4</td>
+              <td>Right</td>
+            </tr>
+
+          </tbody>
+          </table>
+      </div>
+      
+      <hr class="px-2 mt-5 mb-4" />
+
+      <label for="Expression">Infix:</label>
+      <input type="text" disabled="true" id="result"></input>
+
+      <hr class="mt-5 mb-4">
+
+      <p class="text-muted">Rembrandt. Licensed MIT.</p>
+    </div>
+  </body>
+</html>

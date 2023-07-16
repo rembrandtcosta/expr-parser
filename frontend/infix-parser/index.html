@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>hello-wasm example</title>
+  </head>
+  <body>
+    <script type="module">
+      import init, { sy } from "./pkg/hello_wasm.js";
+      init().then(() => {
+        sy("3+4*2/(1-5)^2^3");
+      });
+    </script>
+  </body>
+</html>
+
