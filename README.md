@@ -1,16 +1,8 @@
-# Bootstrap w/ Webpack
+# Expression Parser
 
-Include [Bootstrap](https://getbootstrap.com)'s source Sass and individual JavaScript plugins with [Webpack](https://webpack.js.org).
+This projects is an implementation of the [Shunting yard algorithm](https://en.wikipedia.org/wiki/Shunting_yard_algorithm). The algorithm itself is implemented in Rust and compiled to [WASM](https://webassembly.org/) so the code can run on the client-side. Furthermore, there's a frontend page implemented w/ Bootstrap so you can actually write the expressions and get the results in your browser. 
 
-## Edit in browser
+# Motivation
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/twbs/examples/tree/main/webpack?file=src%2Findex.html)
+This is a simple project I did to explore the Shunting yard algorithm, the Rust Language and it's WASM capabilities to write web code.
 
-## How to use
-
-```sh
-git clone https://github.com/twbs/examples.git
-cd examples/webpack/
-npm install
-npm start
-```
